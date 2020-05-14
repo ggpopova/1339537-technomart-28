@@ -1,8 +1,9 @@
 # Личный проект «Техномарт»
 
-* Наставник: `Неизвестно`.
-- Студент: [Galina Popova](https://up.htmlacademy.ru/htmlcss/28/user/1339537).
 - Наставник: `Антон Кудрявцев`.
+
+* Студент: [Galina Popova](https://up.htmlacademy.ru/htmlcss/28/user/1339537).
+* Наставник: `Антон Кудрявцев`().
 
 ---
 
