@@ -1,15 +1,18 @@
 :root {
   --basic-blue: #32425c;
   --basic-dark-blue: #293449;
+  --basic-dark-blue-cry: #161d29;
   --basic-black: #000000;
   --basic-red: #ee3643;
   --basic-green: #63a63e;
+  --basic-green-guidance: #5fbb2d;
   --basic-green-dark: #367315;
   --basic-grey: #3d546f;
   --basic-greylight: #c5c5c5;
   --basic-background-light: #f1f5f7;
   --basic-background: #f3f7f9;
   --background-white-opacity: rgba(255, 255, 255, 0.3);
+  --background-white-options: rgba(255, 255, 255, 0.5);
   --white: #ffffff;
   --special-ylellow: #ffbf47;
   --special-blue: #3bbce3;
@@ -105,7 +108,6 @@ header {
   overflow: hidden;
 }
 
-.head-top,
 .footer-contacts-inner {
   background-color: var(--basic-dark-blue);
 }
@@ -114,6 +116,53 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.top-list {
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: var(--basic-dark-blue);
+}
+
+.head-top li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.header-logo,
+.forma-help,
+.header-bookmark,
+.header-cart,
+.header-order {
+  flex-grow: 1;
+}
+
+.help-search {
+  border: none;
+}
+
+.header-order {
+  background-color: var(--basic-green);
+}
+
+.header-order:hover {
+  background-color: var(--basic-green-guidance);
+}
+
+.header-order:active {
+  color: var(--background-white-options);
+}
+
+.header-bookmark:active,
+.header-cart:active {
+  background-color: var(--basic-dark-blue-cry);
+  color: var(--background-white-options);
 }
 
 .head-block {
@@ -140,52 +189,67 @@ header {
   justify-content: space-between;
 }
 
-/* .header-logo,
-.footer-logo {
-  background-color: var(--basic-red);
-  border-bottom: 5px solid var(--background-border-gray);
-} */
-.header-logo img {
-  padding: 17px 55px;
-  background-color: var(--basic-red);
+.header-logo {
+  height: 42px;
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  border-bottom: var(--background-border-gray);
+  position: relative;
 }
 
 .footer-logo {
   padding: 26px 42px;
 }
 
-.head-menu,
-.head-menu {
-  padding-top: 16px;
-  padding-bottom: 20px;
-
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
-}
-
-.head-menu {
-  border-bottom: 5px solid var(--basic-dark-blue);
-}
-
-.head-menu,
 .footer-menu,
 .footer-block,
 .footer-contacts {
+  margin-top: 100px;
+  margin-bottom: 50px;
+
   background-color: var(--basic-blue);
   font-family: "Cuprum", Arial, Helvetica, sans-serif;
 }
 
 .head-top a,
 .header-logo a,
-.head-menu a,
+.navigation-text a,
 .help-search {
   color: var(--white);
 }
+
 .help-search {
   background-color: var(--basic-dark-blue);
   background-image: url("../img/icon/icon-search.svg");
   background-position: left;
   background-repeat: no-repeat;
   border-color: var(--basic-dark-blue);
+}
+
+.navigation-text {
+  font-family: "Cuprum", Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: var(--basic-blue);
+  border-bottom: 5px solid var(--basic-dark-blue);
+  height: 60px;
+  align-content: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.navigation-text:hover {
+  background-color: var(--basic-dark-blue);
+}
+
+.navigation-text:active {
+  color: var(--background-white-options);
+  background-color: var(--basic-dark-blue);
 }
 
 .help-search,
@@ -198,11 +262,6 @@ header {
   padding-left: 23px;
 }
 
-.header-order a {
-  background-color: var(--basic-green);
-  padding: 9px 19px;
-}
-
 .block-info,
 .block-phone {
   color: var(--basic-red);
@@ -210,8 +269,9 @@ header {
 
 .site-navigation {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+}
+.site-navigation li {
+  flex-grow: 1;
 }
 
 .block-info {
@@ -293,14 +353,6 @@ header {
   flex-direction: column;
   justify-content: flex-start;
 }
-/* Footer */
-/* .head-menu,
-.footer-menu,
-.footer-block,
-.footer-contacts {
-  background-color: var(--basic-blue);
-  font-family: "Cuprum", Arial, Helvetica, sans-serif;
-} */
 
 .footer-menu,
 .footer-block,
@@ -308,6 +360,7 @@ header {
   color: var(--white);
 }
 
+.head-top,
 .site-navigation,
 .footer-menu-navigation,
 .block-sentence,
@@ -471,7 +524,7 @@ ul {
 .footer-block,
 .footer-menu,
 .head-top,
-.head-menu {
+.site-navigation {
   line-height: 24px;
 }
 .recommendation-text,
