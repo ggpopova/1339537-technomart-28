@@ -82,12 +82,6 @@ img {
   height: auto;
 }
 
-h3 {
-  font-size: 18px;
-  line-height: 20px;
-  color: var(--basic-black);
-}
-
 header {
   background-color: var(--basic-background);
 }
@@ -108,8 +102,9 @@ header {
   overflow: hidden;
 }
 
-.footer-contacts-inner {
+.main-menu {
   background-color: var(--basic-dark-blue);
+  height: 42px;
 }
 
 .header-top {
@@ -119,11 +114,17 @@ header {
 }
 
 .header-logo {
-  flex-grow: 0;
+  position: relative;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-grow: 0;
+  height: 47px;
+  width: 220px;
+
+  background-color: var(--basic-red);
+  border-bottom: 5px solid var(--background-border-gray);
 }
 
 .header-items {
@@ -133,21 +134,12 @@ header {
   flex-grow: 1;
 }
 
-.header-items li {
-  flex-grow: 1;
-  height: 42px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .top-list {
-  flex-grow: 1;
   height: 42px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-color: var(--basic-dark-blue);
 }
 
 .top-list a {
@@ -155,35 +147,11 @@ header {
   justify-content: center;
 }
 
-.header-top li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  flex-grow: 1;
-}
-
-.forma-help,
-.header-bookmark,
-.header-cart,
 .header-order {
   justify-content: center;
   align-items: center;
-}
+  flex-grow: 0;
 
-.header-logo,
-.forma-help,
-.header-bookmark,
-.header-cart,
-.header-order {
-  flex-grow: 1;
-}
-
-.help-search {
-  border: none;
-}
-
-.header-order {
   background-color: var(--basic-green);
 }
 
@@ -193,6 +161,24 @@ header {
 
 .header-order:active {
   color: var(--background-white-options);
+}
+
+.forma-help {
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.help-search {
+  border: none;
+
+  color: var(--white);
+
+  background-color: var(--basic-dark-blue);
+  background-image: url("../img/icon/icon-search.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  border-color: var(--basic-dark-blue);
 }
 
 .header-bookmark:active,
@@ -208,7 +194,7 @@ header {
   align-items: baseline;
 }
 
-.container-block {
+.block {
   font-family: "Cuprum", Arial, Helvetica, sans-serif;
 
   flex-direction: column;
@@ -225,44 +211,21 @@ header {
   justify-content: space-between;
 }
 
-.header-logo {
-  height: 42px;
-  width: 220px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: red;
-  border-bottom: 5px solid var(--background-border-gray);
-  position: relative;
-}
-
 .footer-logo {
-  padding: 26px 42px;
+  padding: 19px 41px 15px;
+  background-color: var(--basic-red);
+  border-bottom: 5px solid var(--background-border-gray);
 }
 
 .footer-menu,
-.footer-block,
 .footer-contacts {
-  margin-top: 100px;
-  margin-bottom: 50px;
-
   background-color: var(--basic-blue);
   font-family: "Cuprum", Arial, Helvetica, sans-serif;
 }
 
-.head-top a,
 .header-logo a,
-.navigation-text a,
-.help-search {
+.navigation-text a {
   color: var(--white);
-}
-
-.help-search {
-  background-color: var(--basic-dark-blue);
-  background-image: url("../img/icon/icon-search.svg");
-  background-position: left;
-  background-repeat: no-repeat;
-  border-color: var(--basic-dark-blue);
 }
 
 .navigation-text {
@@ -288,14 +251,8 @@ header {
   background-color: var(--basic-dark-blue);
 }
 
-.help-search,
-.header-bookmark,
-.header-cart,
-.header-order,
-.block-phone,
-.login-link,
-.registration-name {
-  padding-left: 23px;
+.icon {
+  padding-left: 20px;
 }
 
 .block-info,
@@ -324,12 +281,20 @@ header {
 }
 
 .header-bookmark {
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
   background-image: url("../img/icon/icon-bookmark.svg");
   background-position: left;
   background-repeat: no-repeat;
 }
 
 .header-cart {
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
   background-image: url("../img/icon/icon-cart.svg");
   background-position: left;
   background-repeat: no-repeat;
@@ -341,6 +306,13 @@ header {
   line-height: 30px;
 }
 
+.block-contacts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .block-phone {
   border: 2px solid var(--white);
   background-color: var(--basic-background);
@@ -349,39 +321,52 @@ header {
   background-repeat: no-repeat;
   font-style: bold;
   font-size: 21px;
+
+  padding: 10px 30px;
 }
 
 .block-address {
   color: var(--basic-dark-blue);
   font-size: 14px;
 }
+/*
+.account-name {
+
+}
+ */
 
 .login-link,
-.registration-name,
-.home-name {
+.registration-name {
   font-family: "Cuprum Regular", Arial, Helvetica, sans-serif;
   color: var(--basic-black);
   font-size: 21px;
   line-height: 21px;
-  background-color: var(--white);
-  background-image: url(../img/icon/icon-user.svg);
-  background-position: left;
-  background-repeat: no-repeat;
 }
 
-.home-name {
+.account-name {
+  background-color: var(--white);
   background-image: url(../img/icon/icon-user.svg),
     url(../img/icon/icon-login.svg);
   background-position: top left 20px, top right 20px;
   background-repeat: no-repeat, no-repeat;
-  /* padding-left: 30px;
-  padding-right: 30px; */
+
+  font-family: "Cuprum Regular", Arial, Helvetica, sans-serif;
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
 }
 
 .login-link {
   background-image: url("../img/icon/icon-login.svg");
   background-position: left;
   background-repeat: no-repeat;
+}
+
+.account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-catalog-info {
@@ -391,39 +376,14 @@ header {
 }
 
 .footer-menu,
-.footer-block,
 .footer-contacts {
   color: var(--white);
 }
 
-.head-items,
-.site-navigation,
-.footer-menu-navigation,
-.block-sentence,
-.footer-cosial,
-.main-list,
-.main-partner,
-.list-logo,
-.main-catalog,
-.main-filter,
-.products,
-.pager,
-.home-cabinet,
-.choice-text {
+.clear-ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-/* Можно ли заменить?
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-} */
-
-/* Можно так отодвинуть контейнер?  */
-.footer-address {
-  padding-right: 140px;
 }
 
 .footer-menu-navigation {
@@ -549,33 +509,31 @@ ul {
   font-size: 18px;
 }
 
-.container-partner {
+.partner {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
-.container-partner,
+.partner,
 .main-text,
-.footer-block,
 .footer-menu,
-.head-top,
 .site-navigation {
   line-height: 24px;
 }
+
 .recommendation-text,
 .footer-contacts,
-.product-price-old,
-.product-price-new,
+.products-item,
 .home-cabinet,
 .main-catalog,
 .choice-filter,
-.main-filter,
+.filters,
 .search-show {
   line-height: 18px;
 }
 
-.container-small {
+.small {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -588,15 +546,19 @@ ul {
   padding-left: 37px;
 }
 
-.product-wrapper {
-  display: block;
+.products-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
   width: 220px;
   height: 318px;
   border: 1px solid var(--background-gray-light);
 }
 
-.product-wrapper:hover {
+.products-item:hover {
   box-shadow: var(--frame-light-gray);
 }
 
@@ -605,6 +567,13 @@ ul {
   font-weight: bold;
   color: var(--background-gray-light);
   text-decoration: line-through;
+}
+
+.products-itemtitle {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--basic-black);
 }
 
 .logo-type {
@@ -623,7 +592,7 @@ ul {
 
 /* button */
 
-.product-price-new {
+.product-price {
   width: 141px;
   height: 38px;
   color: var(--white);
@@ -635,22 +604,15 @@ ul {
 
 /* main-catalog */
 
-.main-catalog {
+.breadcrumbs {
   display: flex;
   justify-content: flex-start;
+}
 
+.breadcrumbs-item {
   font-size: 13px;
   color: var(--basic-black);
   text-transform: uppercase;
-}
-
-.arrow-right {
-  border: solid var(--background-gray);
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
 }
 
 .product-name {
@@ -671,15 +633,14 @@ ul {
   color: var(--basic-red);
 }
 
-.main-filter,
+.filters,
 .filter-text,
 .search-show {
   font-size: 13px;
   text-transform: uppercase;
 }
 
-.filter-text,
-.choice-sorting {
+.filter-text {
   background-color: var(--background-brick-light);
 }
 
@@ -689,7 +650,7 @@ ul {
   align-items: center;
 }
 
-.main-filter {
+.filters {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -701,12 +662,12 @@ ul {
   align-items: baseline;
 }
 
-.icon-triangle-up {
+/* .icon-triangle-up {
   border: 5px solid transparent;
   border-bottom: 10px solid var(--basic-greylight);
-}
+} */
 
-.icon-triangle-up:hover {
+/* .icon-triangle-up:hover {
   border: 5px solid transparent;
   border-bottom: 10px solid var(--basic-black);
 }
@@ -728,7 +689,7 @@ ul {
 .icon-triangle-down:active {
   border: 5px solid transparent;
   border-top: 10px solid var(--basic-red);
-}
+} */
 
 .card-sale,
 .card-bookmark {
@@ -788,6 +749,9 @@ ul {
   font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: var(--basic-blue);
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .search-name,
@@ -848,12 +812,13 @@ ul {
 }
 
 .last {
-  display: inline-block;
   width: 140px;
   height: 38px;
-  text-align: center;
-  vertical-align: middle;
   line-height: 18px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .pager-item:hover,
@@ -886,7 +851,7 @@ ul {
   width: 100px;
 }
 
-.container-recommendation {
+.recommendation {
   height: 123px;
   width: 300px;
   color: var(--white);
@@ -957,12 +922,14 @@ ul {
 
 /* Слайдер */
 
-.container-slider {
+.slider {
   width: 620px;
   height: 266px;
   color: var(--white);
   background-color: var(--basic-grey);
   background-image: url(../img/slider/drill.jpg);
+  grid-column: 1/3;
+  grid-row: 2/4;
 }
 .slider-name {
   font-family: "Cuprum", Arial, Helvetica, sans-serif;
@@ -983,10 +950,8 @@ ul {
   background-color: var(--basic-red);
   font-family: "Cuprum Regular", Arial, Helvetica, sans-serif;
 }
-/* .{
-  background-image: url(../img/social-network/vk.svg);
-} */
-.container-advice {
+
+.advice {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -994,10 +959,6 @@ ul {
   align-items: stretch;
 }
 
-.container-slider {
-  grid-column: 1/3;
-  grid-row: 2/4;
-}
 /* Фильтр с диапазоном */
 .filter-item {
   border: none;
@@ -1140,7 +1101,7 @@ ul {
 
 /* слайдер */
 
-.container-slider {
+.slider {
   width: 620px;
   background-color: #00ca74;
   background-image: url(../img/slider/drill.jpg);
@@ -1167,12 +1128,13 @@ ul {
 }
 
 .slider-name {
+  margin: 0;
+
   font-family: "Cuprum", Arial, Helvetica, sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
   color: var(--white);
-  margin: 0;
 }
 .slider-text {
   font-family: "Cuprum", Arial, Helvetica, sans-serif;
