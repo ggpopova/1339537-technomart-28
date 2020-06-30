@@ -94,7 +94,7 @@ var hideMapModal = function () {
 };
 
 var onMapModalEscPress = function () {
-  if (evt.key === "Escape") {
+  if (evt.keyCode === 27) {
     evt.preventDefault();
     showMapModal();
   }
