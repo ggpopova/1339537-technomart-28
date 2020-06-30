@@ -795,14 +795,28 @@ input:focus {
   margin-top: 59px;
 }
 
-.popular-list {
+.section-heading-block {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 19px;
-  padding-left: 28px;
+  padding-top: 25px;
   padding-right: 14px;
+  padding-bottom: 26px;
+  padding-left: 28px;
+  margin-bottom: 19px;
+
   background-color: var(--special-sulfur-light);
+}
+
+.section-heading-title {
+  margin: 0;
+
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "Cuprum", Arial, sans-serif;
+  text-transform: uppercase;
+  color: var(--basic-blue);
 }
 
 .section-title {
@@ -825,17 +839,15 @@ input:focus {
 .button-all-goods {
   margin: 0;
   padding-left: 24px;
-  margin-bottom: 1px;
   padding-right: 24px;
 }
 
-.products {
+.popular-products-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
   justify-content: space-between;
   align-content: center;
-
   padding-bottom: 59px;
 }
 
@@ -864,7 +876,7 @@ input:focus {
   border: 1px solid var(--special-white-light);
 }
 
-.products-item-label::before {
+.products-item-new::before {
   content: "";
   position: absolute;
   top: 0;
@@ -875,18 +887,7 @@ input:focus {
   background-repeat: no-repeat;
 }
 
-.products-item:hover .button-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.products-item:hover img {
-  display: none;
-}
-
-.image-wrapper {
+.products-image-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -894,43 +895,50 @@ input:focus {
   height: 178px;
 }
 
-.product-img-bosch-bfg-9000 {
+.products-item:hover .products-image {
+  display: none;
+}
+
+.products-image-bosch-bfg-9000 {
   margin-bottom: 4px;
 }
 
-.product-img-bosch-bfg-3000 {
+.products-image-bosch-bfg-3000 {
   margin-bottom: 10px;
   margin-right: 13px;
 }
 
-.product-img-bosch-bfg-6000 {
+.products-image-bosch-bfg-6000 {
   margin-bottom: 8px;
   margin-right: 10px;
 }
 
-.product-img-bosch-bfg-2000 {
+.products-image-bosch-bfg-2000 {
   margin-bottom: 10px;
   margin-right: 13px;
 }
 
-.button-wrapper {
-  position: absolute;
-  width: 220px;
-  height: 50%;
-
+.products-button-wrapper {
   display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 20px;
-  padding-bottom: 39px;
+  align-self: flex-start;
+  margin-top: 37px;
+}
+
+.products-item:hover .products-button-wrapper {
+  display: block;
+}
+
+.products-button {
+  margin-bottom: 10px;
 
   font-size: 14px;
   line-height: 18px;
   font-family: "Cuprum", Arial, sans-serif;
   text-transform: uppercase;
+}
 
-  border-radius: 2px;
+.products-button:last-of-type {
+  margin-bottom: 0;
 }
 
 .products-buy {
@@ -959,7 +967,7 @@ input:focus {
   background-color: var(--button-green-yellowish);
 }
 
-.products-bokomark {
+.products-bookmark {
   width: 135px;
   height: 38px;
 
@@ -972,11 +980,11 @@ input:focus {
   border: 3px solid var(--basic-green);
 }
 
-.products-bokomark:hover {
+.products-bookmark:hover {
   border: 3px solid var(--basic-blue);
 }
 
-.products-bokomark:active {
+.products-bookmark:active {
   border: 3px solid var(--slider-blue-pale);
 }
 
@@ -1036,18 +1044,6 @@ input:focus {
   background-image: url("../img/icon/red-button.svg");
   background-repeat: no-repeat;
 }
-
-/* .product-price-new::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: -37px;
-
-  border: 19px solid var(--basic-red);
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-} */
 
 /* Популярные производители */
 
@@ -1414,7 +1410,8 @@ input:focus {
   border-bottom: 1px dotted var(--basic-red);
 }
 
-.text-alternative-active, .text-alternative:hover {
+.text-alternative-active,
+.text-alternative:hover {
   color: var(--basic-red);
   border: none;
 }
@@ -1431,7 +1428,8 @@ input:focus {
   fill: var(--basic-black);
 }
 
-.svg-polygon-active, .svg-polygon-active:hover {
+.svg-polygon-active,
+.svg-polygon-active:hover {
   fill: var(--basic-red);
 }
 
@@ -2078,7 +2076,7 @@ input:focus {
   height: 114px;
 
   margin: 0;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   padding-left: 12px;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-size: 13px;
