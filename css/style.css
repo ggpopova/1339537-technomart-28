@@ -831,11 +831,6 @@ input:focus {
   color: var(--basic-blue);
 }
 
-.top-popular-brands {
-  margin-top: 12px;
-  padding-right: 19px;
-}
-
 .button-all-goods {
   margin: 0;
   padding-left: 24px;
@@ -1045,7 +1040,15 @@ input:focus {
   background-repeat: no-repeat;
 }
 
-/* Популярные производители */
+/* popular-brands-section */
+
+.popular-brands-section {
+  margin-top: 12px;
+}
+
+.section-heading-block-fix {
+  padding-right: 19px;
+}
 
 .button-all-brands {
   padding-left: 38px;
@@ -1056,13 +1059,11 @@ input:focus {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
-  justify-content: space-between;
-  align-content: center;
 }
 
-.brand-item {
+.brand-link {
   width: 220px;
-  height: 145px;
+  height: 146px;
 
   display: flex;
   justify-content: center;
@@ -1073,60 +1074,62 @@ input:focus {
   border: 1px solid var(--special-white-light);
 }
 
-.brand-item:hover {
+.brand-link:hover {
   box-shadow: 0px 4px 20px var(--special-grey-lighter);
 }
 
-.brand-item:active {
+.brand-link:active {
   opacity: 0.5;
 }
 
-.logo-item {
+.brand-image {
   display: block;
   margin: 0;
 }
 
-.brand-img-makita {
-  padding-right: 1px;
-  padding-bottom: 5px;
+.brand-image-bosch {
+  margin-top: 1px;
 }
 
-.brand-img-dewalt {
-  padding-bottom: 5px;
+.brand-image-makita {
+  margin-top: -4px;
+  margin-left: -1px;
 }
 
-.brand-img-interskol {
-  padding-bottom: 1px;
-  padding-right: 2px;
+.brand-image-dewalt {
+  margin-top: -4px;
 }
 
-.brand-img-hitachi {
-  padding-left: 5px;
-  padding-top: 2px;
+.brand-image-interskol {
+  margin-left: -2px;
 }
 
-.brand-img-lg {
-  padding-right: 3px;
-  padding-bottom: 2px;
+.brand-image-hitachi {
+  margin-top: 1px;
+  margin-left: 5px;
 }
 
-.brand-img-aeg {
-  padding-left: 1px;
-  padding-bottom: 1px;
+.brand-image-lg {
+  margin-top: -3px;
+  margin-left: -3px;
 }
 
-/* Сервисы */
+.brand-image-aeg {
+  margin-top: -2px;
+  margin-left: 1px;
+}
 
-.main-clue-info {
+.brand-image-metabo {
+  margin-top: -1px;
+  margin-left: 0px;
+}
+
+/* services-section */
+
+.services-section {
   margin-top: 70px;
-  margin-bottom: 53px;
   padding-top: 53px;
-  padding-bottom: 2px;
-}
 
-.main-clue-info,
-.container-catalog-info,
-.main-catalog-info {
   background-color: var(--basket-grey-light);
 }
 
@@ -1256,10 +1259,11 @@ input:focus {
   line-height: 25px;
 }
 
-/* Компания */
+/* company-section */
 
-.partner {
+.company-section {
   display: flex;
+  margin-top: 53px;
   margin-bottom: 70px;
   flex-direction: row;
   justify-content: space-between;
@@ -1448,6 +1452,10 @@ input:focus {
   justify-content: flex-start;
   margin-top: 70px;
   padding-bottom: 70px;
+}
+
+.main-catalog-info {
+  background-color: var(--basket-grey-light);
 }
 
 .pager {
