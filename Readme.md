@@ -1,6 +1,6 @@
 # Личный проект «Техномарт»
 
-* Студент: [Galina Popova](https://up.htmlacademy.ru/htmlcss/28/user/1339537).
+* Студент: [Галина Попова](https://up.htmlacademy.ru/htmlcss/28/user/1339537).
 * Наставник: [Сергей Зубов](https://up.htmlacademy.ru/htmlcss/28/user/208340).
 
 ---
