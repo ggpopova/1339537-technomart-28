@@ -843,7 +843,6 @@ input:focus {
   gap: 20px;
   justify-content: space-between;
   align-content: center;
-  padding-bottom: 59px;
 }
 
 .products-catalog {
@@ -1043,7 +1042,7 @@ input:focus {
 /* popular-brands-section */
 
 .popular-brands-section {
-  margin-top: 12px;
+  margin-top: 71px;
 }
 
 .section-heading-block-fix {
