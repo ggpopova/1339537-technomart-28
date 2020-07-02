@@ -1,9 +1,8 @@
-// Обработка нажатий на кнопки переключения слайдов в слайдере
+// Обработка нажатий на кнопки переключения слайдов в промослайдере
 
 var sliderButtonRight = document.querySelector(".promo-slider-button-right");
 var sliderButtonLeft = document.querySelector(".promo-slider-button-left");
 
-// var promoSlides = document.querySelectorAll(".promo-slide");
 var promoSlideFirst = document.querySelector(".promo-slide-1");
 var promoSlideSecond = document.querySelector(".promo-slide-2");
 
@@ -36,6 +35,37 @@ promoSliderRadioSecond.addEventListener("change", function (evt) {
   evt.preventDefault();
   promoSlideFirst.classList.remove("promo-slide-displayed");
   promoSlideSecond.classList.add("promo-slide-displayed");
+});
+
+// Обработка нажатий на кнопки переключения слайдов в слайдере услуг
+
+var serviceSlideFirst = document.querySelector(".service-option-slide-1");
+var serviceSlideSecond = document.querySelector(".service-option-slide-2");
+var serviceSlideThird = document.querySelector(".service-option-slide-3");
+
+var serviceSliderRadioFirst = document.querySelector(".service-option-radio-button-1");
+var serviceSliderRadioSecond = document.querySelector(".service-option-radio-button-2");
+var serviceSliderRadioThird = document.querySelector(".service-option-radio-button-3");
+
+serviceSliderRadioFirst.addEventListener("change", function (evt) {
+  evt.preventDefault();
+  serviceSlideFirst.classList.add("service-option-slide-displayed");
+  serviceSlideSecond.classList.remove("service-option-slide-displayed");
+  serviceSlideThird.classList.remove("service-option-slide-displayed");
+});
+
+serviceSliderRadioSecond.addEventListener("change", function (evt) {
+  evt.preventDefault();
+  serviceSlideFirst.classList.remove("service-option-slide-displayed");
+  serviceSlideSecond.classList.add("service-option-slide-displayed");
+  serviceSlideThird.classList.remove("service-option-slide-displayed");
+});
+
+serviceSliderRadioThird.addEventListener("change", function (evt) {
+  evt.preventDefault();
+  serviceSlideFirst.classList.remove("service-option-slide-displayed");
+  serviceSlideSecond.classList.remove("service-option-slide-displayed");
+  serviceSlideThird.classList.add("service-option-slide-displayed");
 });
 
 // Обработка нажатий на кнопки открытия и закрытия модального окна
