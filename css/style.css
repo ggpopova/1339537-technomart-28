@@ -1928,56 +1928,7 @@ input:focus {
   color: var(--basic-red);
 }
 
-/*  */
-
-.breadcrumbs {
-  display: flex;
-  justify-content: flex-start;
-  padding-top: 16px;
-  padding-bottom: 19px;
-}
-
-.breadcrumbs-item {
-  margin: 0;
-  padding-left: 41px;
-
-  background-image: url("../img/icon/icon-right-small.svg");
-  background-repeat: no-repeat;
-  background-position: left 17px center;
-  font-size: 13px;
-  line-height: 18px;
-  color: var(--basic-black);
-  text-transform: uppercase;
-}
-
-.product-name {
-  margin: 0 auto;
-  padding-top: 29px;
-  padding-left: 29px;
-  padding-bottom: 30px;
-
-  background-color: var(--special-white);
-}
-
-.button {
-  width: 462px;
-  height: 38px;
-
-  padding: 0;
-
-  font-style: normal;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Cuprum", Arial, sans-serif;
-  color: var(--basic-white);
-  text-transform: uppercase;
-
-  border: none;
-  border-style: none;
-  background-color: var(--basic-red);
-}
-
-/* Modal */
+/* modal */
 
 .modal {
   position: fixed;
@@ -1991,8 +1942,6 @@ input:focus {
   font-family: "Cuprum", Arial, sans-serif;
 
   background-color: var(--basic-white);
-  background-position: 0 0;
-  background-repeat: repeat;
   border-top: 7px solid var(--basic-red);
   box-shadow: 0px 4px 20px var(--special-black-darker);
 }
@@ -2013,6 +1962,13 @@ input:focus {
 
 .modal-hidden {
   display: none;
+}
+
+/* modal-map */
+
+.modal-map {
+  width: 943px;
+  height: 449px;
 }
 
 /* обратная связь */
@@ -2113,20 +2069,55 @@ input:focus {
   color: var(--special-white-lighter);
 }
 
-/* map */
+/*  */
 
-.modal-map {
-  width: 943px;
-  height: 449px;
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 16px;
+  padding-bottom: 19px;
 }
 
-.modal-map img {
-  display: block;
+.breadcrumbs-item {
+  margin: 0;
+  padding-left: 41px;
+
+  background-image: url("../img/icon/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: left 17px center;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
 }
 
-.modal-map iframe {
+.product-name {
+  margin: 0 auto;
+  padding-top: 29px;
+  padding-left: 29px;
+  padding-bottom: 30px;
+
+  background-color: var(--special-white);
+}
+
+.button {
+  width: 462px;
+  height: 38px;
+
+  padding: 0;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Cuprum", Arial, sans-serif;
+  color: var(--basic-white);
+  text-transform: uppercase;
+
   border: none;
+  border-style: none;
+  background-color: var(--basic-red);
 }
+
 
 /* Корзина */
 
