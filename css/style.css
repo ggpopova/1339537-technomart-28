@@ -14,6 +14,7 @@
   --special-grey-light: #c5c5c5;
   --special-grey-lighter: rgba(0, 0, 0, 0.149);
   --special-grey-lightest: #f3f7f8;
+  --special-grey-dark: #f4f4f4;
   --special-red-dark-darkest: #8d1e26;
   --special-red-darker: #ba2732;
   --special-red-dark: #b52933;
@@ -1971,105 +1972,82 @@ input:focus {
   height: 449px;
 }
 
-/* обратная связь */
+/* modal-feedback */
 
-.modal-form {
+.modal-feedback {
   width: 622px;
-  height: 438px;
+  height: 430px;
 }
 
-.login-form {
+.modal-feedback-form-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 13px;;
+  margin-top: 39px;
+  margin-right: 80px;
+  margin-bottom: 37px;
+  margin-left: 80px;
+}
+
+.modal-feedback-form-block {
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  padding: 0;
-
-  list-style: none;
 }
 
-.form-info input {
-  font-size: 13px;
-  line-height: 24px;
-  display: flex;
-  padding: 0;
-  padding-left: 12px;
+.modal-feedback-form-label {
+  margin-bottom: 11px;
+
   font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.modal-feedback-form-input {
+  display: flex;
+  padding: 0;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+
   font-size: 13px;
   line-height: 24px;
+  font-family: "PT Sans", Arial, sans-serif;
   color: var(--special-white-lighter);
-}
 
-.appointment {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  padding-top: 46px;
-  padding-bottom: 13px;
-}
-
-.list-name {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  margin-right: 20px;
-}
-
-.appointment-item {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  margin-top: 21px;
-  margin-right: 20px;
-}
-
-.appointment-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.appointment-name,
-.login-mail,
-.appointment-text-text {
-  margin-bottom: 10px;
-}
-
-.login-icon-user,
-.appointment-name-name {
-  width: 220px;
-  height: 38px;
-
+  border: 2px solid var(--special-grey-light);
   border-radius: 2px;
 }
 
-.appointment-text-text {
-  width: 460px;
-  height: 114px;
-
-  margin: 0;
-  margin-bottom: 50px;
-  padding-left: 12px;
-  font-family: "PT Sans", Arial, sans-serif;
+.modal-feedback-form-input::placeholder {
   font-size: 13px;
   line-height: 24px;
+  font-family: "PT Sans", Arial, sans-serif;
   color: var(--special-white-lighter);
-  border-radius: 2px;
+  opacity: 1;
+}
+
+.modal-feedback-form-block-textarea {
+  grid-column: span 2;
+}
+
+.modal-feedback-form-textarea {
+  padding-bottom: 9px;
 
   resize: none;
 }
 
-.login-mail {
-  font-weight: 700;
+.modal-feedback-form-block-submit {
+  display: flex;
+  justify-content: center;
+  padding-top: 37px;
+  padding-bottom: 37px;
+
+  background-color: var(--special-grey-dark);
 }
 
-.appointment-item input::placeholder {
-  font-size: 13px;
-  font-family: "PT Sans", Arial, sans-serif;
-  color: var(--special-white-lighter);
-}
-
-/*  */
+/* catalog */
 
 .breadcrumbs {
   display: flex;
@@ -2117,7 +2095,6 @@ input:focus {
   border-style: none;
   background-color: var(--basic-red);
 }
-
 
 /* Корзина */
 

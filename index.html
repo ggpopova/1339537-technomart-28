@@ -369,30 +369,34 @@
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
-  <section class="modal modal-form modal-hidden">
-    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="form-info appointment">
-        <div class="appointment-list list-name">
-          <label for="appointment-name" class="appointment-name">Ваше имя</label>
-          <input class="appointment-name-name" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+  <section class="modal modal-feedback modal-hidden">
+
+    <form action="https://echo.htmlacademy.ru" method="post">
+
+      <div class="modal-feedback-form-wrapper">
+        <div class="modal-feedback-form-block">
+          <label class="modal-feedback-form-label" for="modal-feedback-form-input-name">Ваше имя:</label>
+          <input class="modal-feedback-form-input" id="modal-feedback-form-input-name" type="text" name="name" placeholder="Имя Фамилия">
         </div>
-        <div class="appointment-list">
-          <label class="login-mail" for="login-login">Ваш e-mail:</label>
-          <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="email@example.com">
+
+        <div class="modal-feedback-form-block">
+          <label class="modal-feedback-form-label" for="modal-feedback-form-input-email">Ваш e-mail:</label>
+          <input class="modal-feedback-form-input" id="modal-feedback-form-input-email" type="email" name="email" placeholder="email@example.com">
+        </div>
+
+        <div class="modal-feedback-form-block modal-feedback-form-block-textarea">
+          <label class="modal-feedback-form-label" for="modal-feedback-form-textarea">Тeкст письма:</label>
+          <textarea class="modal-feedback-form-input modal-feedback-form-textarea" id="modal-feedback-form-textarea" name="message-body" rows="4" cols="20" placeholder="В свободной форме"></textarea>
         </div>
       </div>
 
-      <li class="appointment-list">
-        <label class="appointment-text" for="appointment-text">Тeкст письма:</label>
-        <textarea class="appointment-text-text" rows="10" cols="20">В свободной форме</textarea>
-      </li>
-      <li class="basket-button">
-        <button class="button" type="submit">Оформить заказ</button></li>
-      </ul>
-
-      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      <div class="modal-feedback-form-block-submit">
+        <button class="button" type="submit">Оформить заказ</button>
+      </div>
 
     </form>
+
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
 
   </section>
 
