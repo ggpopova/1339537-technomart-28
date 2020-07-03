@@ -70,7 +70,7 @@ serviceSliderRadioThird.addEventListener("change", function (evt) {
 
 // Обработка нажатий на кнопки открытия и закрытия модального окна
 
-var feedbackModalOpen = document.querySelector(".button-contacts");
+var feedbackModalOpen = document.querySelector(".company-section-contacts-button");
 var feedbackModal = document.querySelector(".modal-form");
 var feedbackModalClose = feedbackModal.querySelector(".modal-close");
 

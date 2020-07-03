@@ -1262,29 +1262,51 @@ input:focus {
   display: flex;
   justify-content: center;
 }
+
 /* company-section */
 
 .company-section {
   display: flex;
-  margin-top: 53px;
+  margin-top: 74px;
   margin-bottom: 70px;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.company {
+.company-section-about {
   width: 478px;
 }
 
-.delivery-list {
+.company-section-text {
   margin: 0;
-  padding-top: 2px;
-  padding-bottom: 9px;
+
+  font-size: 13px;
+}
+
+.company-section-first-paragraph {
+  margin-top: 23px;
+}
+
+.company-section-second-paragraph {
+  width: 400px;
+  margin-top: 26px;
+}
+
+.company-section-third-paragraph {
+  width: 200px;
+  margin-top: 23px;
+  margin-bottom: 33px;
+}
+
+.company-section-list {
+  margin: 0;
+  margin-top: 2px;
+  margin-bottom: 8px;
 
   font-family: "Cuprum", Arial, sans-serif;
 }
 
-.partner-item {
+.company-section-item {
   position: relative;
   display: flex;
   align-items: center;
@@ -1293,7 +1315,7 @@ input:focus {
   padding-left: 37px;
 }
 
-.partner-item::before {
+.company-section-item::before {
   content: "";
   position: absolute;
   width: 25px;
@@ -1303,29 +1325,22 @@ input:focus {
   background-color: var(--basic-red);
 }
 
-.button-company {
+.company-section-about-button {
   width: 220px;
   justify-content: center;
 }
 
-/* Контакты */
-
-.contacts {
+.company-section-contacts {
   width: 300px;
 }
 
-.contacts p {
-  margin: 0;
-  padding-bottom: 34px;
-}
-
-.contacts-text2 {
+.company-section-contacts-text {
   margin: 0;
   margin-top: 25px;
   margin-bottom: 32px;
 }
 
-.map-photo {
+.map-photo-figure {
   height: 158px;
 
   margin: 0;
@@ -1336,21 +1351,20 @@ input:focus {
   display: block;
 }
 
-.map-photo img {
+.map-photo-image {
+  display: block;
   width: 300px;
   height: 158px;
 
   margin: 0;
 }
 
-.section-company-text {
-  padding-top: 26px;
-}
-
-.button-contacts {
+.company-section-contacts-button {
   padding-left: 63px;
   padding-right: 60px;
 }
+
+/*  */
 
 .choice-filter {
   display: flex;
