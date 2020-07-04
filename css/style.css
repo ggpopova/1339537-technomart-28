@@ -1988,7 +1988,7 @@ input:focus {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
-  row-gap: 13px;;
+  row-gap: 13px;
   margin-top: 39px;
   margin-right: 80px;
   margin-bottom: 37px;
@@ -2054,14 +2054,19 @@ input:focus {
 
 /* catalog */
 
-.breadcrumbs {
-  display: flex;
-  justify-content: flex-start;
-  padding-top: 16px;
-  padding-bottom: 19px;
+/* breadcrumbs-section */
+
+.breadcrumbs-section {
+  margin-top: 21px;
+  margin-bottom: 19px;
 }
 
-.breadcrumbs-item {
+.breadcrumbs {
+  display: flex;
+}
+
+.breadcrumbs-link {
+  display: block;
   margin: 0;
   padding-left: 41px;
 
@@ -2073,6 +2078,17 @@ input:focus {
   color: var(--basic-black);
   text-transform: uppercase;
 }
+
+.breadcrumbs-link-home {
+  width: 14px;
+  height: 18px;
+  padding-left: 0;
+
+  background-image: url("../img/icon/icon-home.svg");
+  background-position: center;
+}
+
+/*  */
 
 .product-name {
   margin: 0 auto;
