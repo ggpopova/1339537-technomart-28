@@ -2066,6 +2066,66 @@ img {
   cursor: pointer;
 }
 
+/* modal-item-added */
+
+.modal-item-added {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 620px;
+  height: 282px;
+
+  background-color: var(--basic-white);
+}
+
+.modal-item-added-text {
+  height: 163px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  background-image: url("../img/icon/icon-mark.svg");
+  background-position: left 81px center;
+  background-repeat: no-repeat;
+}
+
+.modal-item-added-buttons-wrapper {
+  height: 112px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--basket-grey);
+}
+
+.modal-item-added-button-order {
+  margin-right: 10px;
+  padding-left: 47px;
+  padding-right: 46px;
+}
+
+.modal-item-added-button-buy {
+  padding-left: 32px;
+  padding-right: 31px;
+
+  color: var(--basic-black);
+
+  background-color: var(--basic-white);
+}
+
+.modal-item-added-button-buy:hover {
+  color: var(--basic-white);
+}
+
 /* catalog */
 
 /* breadcrumbs-section */
@@ -2113,59 +2173,4 @@ img {
   padding-bottom: 30px;
 
   background-color: var(--special-white);
-}
-
-/*  */
-
-/* Корзина */
-
-.basket-form {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  width: 620px;
-  height: 282px;
-
-  background-color: var(--basic-white);
-}
-
-.basket {
-  height: 170px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-image: url("../img/icon/icon-mark.svg");
-  background-position: left 81px center;
-  background-repeat: no-repeat;
-}
-
-.basket-button {
-  height: 112px;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  background-color: var(--basket-grey);
-}
-
-.button-order {
-  margin-right: 10px;
-  padding-left: 47px;
-  padding-right: 46px;
-}
-
-.button-buy {
-  padding-left: 32px;
-  padding-right: 31px;
-
-  color: var(--basic-black);
-
-  background-color: var(--basic-white);
 }

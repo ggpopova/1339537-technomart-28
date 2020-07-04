@@ -51,7 +51,7 @@
 
     <nav class="header-main-bottom container">
       <ul class="menu-main clear-ul">
-        <li class="menu-main-item"><a class="menu-main-link" href="#">Главная</a></li>
+        <li class="menu-main-item"><a class="menu-main-link" href="index.html">Главная</a></li>
         <li class="menu-main-item"><a class="menu-main-link" href="#">Компания</a></li>
         <li class="menu-main-item"><a class="menu-main-link" href="catalog.html">Каталог</a></li>
         <li class="menu-main-item"><a class="menu-main-link" href="#">Новости</a></li>
@@ -127,7 +127,6 @@
 
               <input class="check-input" type="checkbox" id="manufacturer-1" checked>
               <label class="check-label" for="manufacturer-1">Bosch</label>
-
 
               <input class="check-input" type="checkbox" id="manufacturer-2">
               <label class="check-label" for="manufacturer-2">Интерскол</label>
@@ -380,15 +379,15 @@
 
   </footer>
 
-  <section class="modal basket-form modal-hidden">
-      <h2 class="basket">Товар добавлен в корзину!</h2>
+  <section class="modal modal-item-added modal-hidden">
+    <p class="modal-item-added-text">Товар добавлен в корзину!</p>
 
-      <div class="basket-button">
-        <a class="button-generic button-order" href="#" aria-label="Оформить заказ">Оформить заказ</a>
-        <a class="button-generic button-buy" href="#" aria-label="Продолжить покупки">Продолжить покупки</a>
-      </div>
+    <div class="modal-item-added-buttons-wrapper">
+      <a class="button-generic modal-item-added-button-order" href="#">Оформить заказ</a>
+      <a class="button-generic modal-item-added-button-buy" href="#">Продолжить покупки</a>
+    </div>
 
-      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
   <script src="js/script.js"></script>

@@ -179,10 +179,10 @@ if (mapModalClose) {
 }
 
 var purchaseModalOpen = document.querySelectorAll(".products-buy");
-var purchaseModal = document.querySelector(".basket-form");
+var purchaseModal = document.querySelector(".modal-item-added");
 if (purchaseModal) {
   var purchaseModalClose = purchaseModal.querySelector(".modal-close");
-  var purchaseModalContinue = purchaseModal.querySelector(".button-buy");
+  var purchaseModalContinue = purchaseModal.querySelector(".modal-item-added-button-buy");
 }
 
 var showPurchaseModal = function () {
