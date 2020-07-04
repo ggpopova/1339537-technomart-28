@@ -460,15 +460,20 @@ input:focus {
   display: flex;
   align-items: center;
   margin-top: 6px;
-  gap: 14px;
 }
 
 .user-orders,
-.user-profile,
-.user-delimeter {
+.user-delimeter,
+.user-profile {
+  margin-right: 14px;
+
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-blue);
+}
+
+.user-mini-menu a:last-child {
+  margin-right: 0;
 }
 
 /* header-main-bottom */
