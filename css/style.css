@@ -98,12 +98,6 @@ img {
   height: auto;
 }
 
-input:active,
-input:hover,
-input:focus {
-  outline: inherit;
-}
-
 .container {
   width: 940px;
   margin: 0 auto;
@@ -2052,6 +2046,26 @@ input:focus {
   background-color: var(--special-grey-dark);
 }
 
+.modal-feedback-form-block-submit-button {
+  width: 462px;
+  height: 38px;
+
+  padding: 0;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Cuprum", Arial, sans-serif;
+  color: var(--basic-white);
+  text-transform: uppercase;
+
+  border: none;
+  border-style: none;
+  background-color: var(--basic-red);
+
+  cursor: pointer;
+}
+
 /* catalog */
 
 /* breadcrumbs-section */
@@ -2087,7 +2101,7 @@ input:focus {
   background-position: center;
 }
 
-/*  */
+/* heading-section */
 
 .heading-section {
   margin-top: 20px;
@@ -2101,36 +2115,19 @@ input:focus {
   background-color: var(--special-white);
 }
 
-.button {
-  width: 462px;
-  height: 38px;
-
-  padding: 0;
-
-  font-style: normal;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Cuprum", Arial, sans-serif;
-  color: var(--basic-white);
-  text-transform: uppercase;
-
-  border: none;
-  border-style: none;
-  background-color: var(--basic-red);
-}
+/*  */
 
 /* Корзина */
 
 .basket-form {
-  display: none;
   position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
   width: 620px;
   height: 282px;
-  top: 188px;
-
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
 
   background-color: var(--basic-white);
 }
@@ -2172,9 +2169,3 @@ input:focus {
 
   background-color: var(--basic-white);
 }
-
-/* input:active,
-input:hover,
-input:focus {
-  outline: none;
-} */
