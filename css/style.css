@@ -2058,7 +2058,6 @@ input:focus {
 
 .breadcrumbs-section {
   margin-top: 21px;
-  margin-bottom: 19px;
 }
 
 .breadcrumbs {
@@ -2090,9 +2089,12 @@ input:focus {
 
 /*  */
 
-.product-name {
-  margin: 0 auto;
-  padding-top: 29px;
+.heading-section {
+  margin-top: 20px;
+}
+
+.section-heading-block-catalog {
+  padding-top: 30px;
   padding-left: 29px;
   padding-bottom: 30px;
 
