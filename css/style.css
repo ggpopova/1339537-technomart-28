@@ -1813,7 +1813,7 @@ img {
   border: 0;
 }
 
-.filter-fieldset::before {
+/* .filter-fieldset::before {
   position: absolute;
 
   height: 1px;
@@ -1830,15 +1830,42 @@ img {
 
 .filter-fieldset-power::before {
   top: -70px;
-}
+} */
 
 .filter-legend {
   display: block;
   padding-bottom: 14px;
 
+  /*  */
+  position: relative;
+  /*  */
+
   font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.filter-legend::before {
+  position: absolute;
+
+  height: 1px;
+  width: 220px;
+
+  background-color: var(--special-white-lightest);
+
+  content: "";
+}
+
+.filter-legend-price::before {
+  display: none;
+}
+
+.filter-legend-manufacturers::before {
+  top: -3px;
+}
+
+.filter-legend-power::before {
+  top: 10px;
 }
 
 .filter-legend-price {
