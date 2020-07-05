@@ -164,26 +164,37 @@
 
       <div class="item-catalog">
 
-        <ul class="sorting-items-list clear-ul">
-          <li class="filter-sorting filter-text">Сортировка:</li>
-          <li class="filter-price"><a class="filter-text text-alternative text-alternative-active" href="#">По цене</a></li>
-          <li class="filter-type"><a class="filter-text text-alternative" href="#">По типу</a></li>
-          <li class="filter-functional"><a class="filter-text text-alternative" href="#">По функционалу</a></li>
-          <li class="filters-icon filter-icon">
-            <a class="icon-triangle-up" href="#">
-              <svg class="svg-img" width="11" height="10">
-                <polygon class="svg-polygon svg-polygon-active" fill="#00FF00" points="0,10 5,0 10,10" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="icon-triangle-down" href="#">
-              <svg class="svg-img" width="11" height="10">
-                <polygon class="svg-polygon" fill="#00FF00" points="10,0 5,10 0,0" />
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <section class="sorting-section">
+
+          <h2 class="sorting-heading">Сортировка:</h2>
+
+          <ul class="sorting-options-list clear-ul">
+            <li class="sorting-option-byprice">
+              <a class="sorting-option-link sorting-option-link-active" href="#">
+                По цене
+              </a>
+            </li>
+            <li class="sorting-option-bytype">
+              <a class="sorting-option-link" href="#">
+                По типу
+              </a>
+            </li>
+            <li class="sorting-option-byfunction">
+              <a class="sorting-option-link" href="#">
+                По функционалу
+              </a>
+            </li>
+            <li class="sorting-option-up">
+              <a class="sorting-option-link-up sorting-option-link-up-active" href="#" aria-label="От меньшего к большему">
+              </a>
+            </li>
+            <li class="sorting-option-down">
+              <a class="sorting-option-link-down" href="#" aria-label="От большего к меньшему">
+              </a>
+            </li>
+          </ul>
+
+        </section>
 
         <ul class="products-catalog clear-ul">
 
