@@ -1813,32 +1813,10 @@ img {
   border: 0;
 }
 
-/* .filter-fieldset::before {
-  position: absolute;
-
-  height: 1px;
-  width: 100%;
-
-  background-color: var(--special-white-lightest);
-
-  content: "";
-}
-
-.filter-fieldset-manufacturers::before {
-  top: -62px;
-}
-
-.filter-fieldset-power::before {
-  top: -70px;
-} */
-
 .filter-legend {
+  position: relative;
   display: block;
   padding-bottom: 14px;
-
-  /*  */
-  position: relative;
-  /*  */
 
   font-size: 17px;
   font-weight: bold;
