@@ -534,7 +534,6 @@ img {
 
   display: flex;
   flex-direction: column;
-  gap: 13px;
   justify-content: space-between;
 
   color: var(--basic-white);
@@ -588,6 +587,7 @@ img {
 .promo-block-heading {
   max-width: 135px;
   margin: 0;
+  margin-bottom: 13px;
 
   font-size: 24px;
   line-height: 30px;
@@ -1834,7 +1834,7 @@ img {
 
 .filter-legend {
   display: block;
-  margin-bottom: 14px;
+  padding-bottom: 14px;
 
   font-size: 17px;
   font-weight: bold;
@@ -1842,18 +1842,18 @@ img {
 }
 
 .filter-legend-price {
-  margin-top: 17px;
-  margin-bottom: 14px;
+  padding-top: 17px;
+  padding-bottom: 14px;
 }
 
 .filter-legend-manufacturers {
-  margin-top: 17px;
-  margin-bottom: 18px;
+  padding-top: 17px;
+  padding-bottom: 18px;
 }
 
 .filter-legend-power {
-  margin-top: 32px;
-  margin-bottom: 24px;
+  padding-top: 32px;
+  padding-bottom: 24px;
 }
 
 .range-filter {
