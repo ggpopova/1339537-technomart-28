@@ -2171,7 +2171,16 @@ img {
 /* seo-section */
 
 .seo-section {
-  margin-top: 69px;
+  display: flex;
+  margin-top: 59px;
 
   background-color: var(--basket-grey-light);
+}
+
+.section-heading-title-seo {
+  margin-top: 65px;
+}
+
+.section-heading-text-seo {
+  margin-bottom: 69px;
 }
