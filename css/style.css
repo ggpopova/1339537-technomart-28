@@ -1800,9 +1800,6 @@ img {
   column-gap: 20px;
 }
 
-.filter-form {
-}
-
 .filter-heading {
   margin: 0;
   padding-top: 10px;
@@ -1833,7 +1830,7 @@ img {
   height: 1px;
   width: 100%;
 
-  background-color: red;
+  background-color: var(--special-white-lightest);
 
   content: "";
 }
