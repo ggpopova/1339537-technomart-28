@@ -442,16 +442,13 @@ img {
 }
 
 .user-profile-hero:hover {
-  background-color: var(--basic-white);
-  background-image: url("../img/icon/icon-user-blue.svg"),
-    url("../img/icon/icon-logout-blue.svg");
+  background-image: url("../img/icon/icon-user-blue.svg");
 }
 
 .user-profile-hero:active {
   color: var(--special-grey-light);
 
-  background-image: url("../img/icon/icon-user.svg"),
-    url("../img/icon/icon-logout.svg");
+  background-image: url("../img/icon/icon-user.svg");
 }
 
 .user-logout {
@@ -466,6 +463,16 @@ img {
   background-image: url("../img/icon/icon-logout.svg");
   background-position: right 16px center;
   background-repeat: no-repeat;
+}
+
+.user-logout:hover {
+  background-image: url("../img/icon/icon-logout-blue.svg");
+}
+
+.user-logout:active {
+  color: var(--special-grey-light);
+
+  background-image: url("../img/icon/icon-logout.svg");
 }
 
 .user-mini-menu {
