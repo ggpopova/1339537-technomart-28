@@ -1597,6 +1597,10 @@ img {
   height: 449px;
 }
 
+.modal-map-frame {
+  border: 0;
+}
+
 /* modal-feedback */
 
 .modal-feedback {
