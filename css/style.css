@@ -419,35 +419,53 @@ img {
   margin-left: 51px;
 }
 
-.user-name {
+.user-profile-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-profile-hero {
   display: block;
   padding-top: 12px;
   padding-left: 56px;
   padding-bottom: 12px;
-  padding-right: 56px;
+  padding-right: 10px;
 
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
 
   background-color: var(--basic-white);
-  background-image: url("../img/icon/icon-user.svg"),
-    url("../img/icon/icon-logout.svg");
-  background-position: left 14px center, right 16px center;
-  background-repeat: no-repeat, no-repeat;
+  background-image: url("../img/icon/icon-user.svg");
+  background-position: left 14px center;
+  background-repeat: no-repeat;
 }
 
-.user-name:hover {
+.user-profile-hero:hover {
   background-color: var(--basic-white);
   background-image: url("../img/icon/icon-user-blue.svg"),
     url("../img/icon/icon-logout-blue.svg");
 }
 
-.user-name:active {
+.user-profile-hero:active {
   color: var(--special-grey-light);
 
   background-image: url("../img/icon/icon-user.svg"),
     url("../img/icon/icon-logout.svg");
+}
+
+.user-logout {
+  display: block;
+  min-width: 47px;
+  padding-top: 12px;
+  padding-right: 17px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+
+  background-color: var(--basic-white);
+  background-image: url("../img/icon/icon-logout.svg");
+  background-position: right 16px center;
+  background-repeat: no-repeat;
 }
 
 .user-mini-menu {
