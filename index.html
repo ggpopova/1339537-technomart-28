@@ -22,8 +22,22 @@
           <input class="form-search-input" name="search-query" type="search" placeholder="Поиск:">
         </form>
         <ul class="user-tools clear-ul">
-          <li><a class="user-tools-bookmarks" href="#">Закладки: 0</a></li>
-          <li><a class="user-tools-cart" href="#">Корзина: 0</a></li>
+          <li>
+            <a class="user-tools-bookmarks" href="#">
+              <svg class="user-tools-bookmarks-image" xmlns="http://www.w3.org/2000/svg" width="14" height="16" fill="#fff">
+                <path d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
+              </svg>
+              Закладки: 0
+            </a>
+          </li>
+          <li>
+            <a class="user-tools-cart" href="#">
+              <svg class="user-tools-cart-image" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#fff">
+                <path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951V2z"/>
+              </svg>
+              Корзина: 0
+            </a>
+          </li>
           <li><a class="user-tools-checkout" href="#">Оформить заказ</a></li>
         </ul>
       </div>
@@ -39,7 +53,12 @@
       </div>
 
       <div class="user-actions">
-        <a class="user-signin" href="login.html">Войти</a>
+        <a class="user-signin" href="login.html">
+          <svg class="user-signin-image" xmlns="http://www.w3.org/2000/svg" width="20" height="17" fill="#C5C5C5">
+            <path d="M14.167 8.5L5.714 0v6H0v5h5.714v6l8.453-8.5z"/><path d="M16.177 15.01H11.39V17h4.787c2.074 0 2.861-1.81 2.885-3.026V3.028C19.038 1.811 18.252 0 16.177 0H11.39v1.99h4.787c.8 0 .945.681.962 1.057v10.904c-.016.376-.163 1.059-.962 1.059z"/>
+          </svg>
+          Войти
+        </a>
         <a class="user-signup" href="#">Регистрация</a>
       </div>
 
