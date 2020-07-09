@@ -12,7 +12,7 @@
   --special-black-dark: rgba(0, 0, 0, 0.24);
   --special-grey: #405069;
   --special-grey-light: #c5c5c5;
-  --special-grey-lighter: rgba(0, 0, 0, 0.149);
+  --special-grey-lighter: rgba(0, 0, 0, 0.15);
   --special-blue: #3d546f;
   --special-grey-lightest: #f3f7f8;
   --special-grey-dark: #f4f4f4;
@@ -31,7 +31,7 @@
   --slider-blue-pale: rgba(50, 66, 92, 0.502);
   --slider-blue-light: #3bbce3;
   --slider-grey-dark: rgba(197, 197, 197, 0.3);
-  --slider-grey-pale: rgb(169, 169, 169, 0.3);
+  --slider-grey-pale: rgba(169, 169, 169, 0.3);
   --slider-green-light: #8ed78f;
   --slider-lilac: #dc91d8;
   --slider-white: rgba(255, 255, 255, 0.3);
@@ -357,7 +357,6 @@ img {
   font-weight: 700;
   line-height: 30px;
 
-  background-color: var(--basic-background);
   background-image: url("../img/icon-phone.svg");
   background-position: left 36px center;
   background-repeat: no-repeat;
@@ -681,11 +680,11 @@ img {
 }
 
 .promo-block-link:hover {
-  background-color: var(--slider-grey-dark);
+  background-color: var(--slider-grey-pale);
 }
 
 .promo-block-link:active {
-  background-color: var(--slider-grey-pale);
+  background-color: var(--slider-grey-dark);
 }
 
 /* slider */
@@ -1026,8 +1025,7 @@ img {
 }
 
 .products-item:hover {
-  box-shadow: var(--special-grey-lighter);
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 20px var(--special-grey-lighter);
 }
 
 .products-price {
