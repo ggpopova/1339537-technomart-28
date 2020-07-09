@@ -180,9 +180,6 @@ img {
   color: var(--basic-white);
 
   background-color: var(--basic-blue-dark);
-  background-image: url("../img/icon-search-grey.svg");
-  background-position: 17px;
-  background-repeat: no-repeat;
   border: none;
 }
 
@@ -397,8 +394,6 @@ img {
   color: var(--basic-black);
 
   background-color: var(--basic-white);
-  background-image: url("../img/icon-user-signin-grey.svg");
-  background-position: left 19px center;
   background-repeat: no-repeat;
 }
 
