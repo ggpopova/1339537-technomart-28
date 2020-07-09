@@ -62,6 +62,11 @@
 
   /* footer */
   --footer-yellow: #ffd180;
+
+  /* range-slider */
+  --range-scale: #d7dcde;
+  --range-toggle: #ababab;
+  --range-shadow: #cfcfcf;
 }
 
 /* Глобальные */
@@ -1945,7 +1950,7 @@ img {
 .range-controls .scale {
   height: 2px;
 
-  background: #d7dcde;
+  background-color: var(--range-scale);
 }
 
 .range-controls .bar {
@@ -1968,10 +1973,10 @@ img {
 
   padding: 0;
 
-  background-color: #ababab;
+  background-color: var(--range-toggle);
   border: 8px solid var(--basic-white);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(--range-shadow);
   cursor: pointer;
   box-sizing: content-box;
 }
