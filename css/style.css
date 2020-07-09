@@ -202,6 +202,10 @@ img {
   opacity: 1;
 }
 
+.form-search-label {
+  display: none;
+}
+
 .form-search-image {
   position: absolute;
   top: 12px;
@@ -217,6 +221,7 @@ img {
 
 .form-search-input:focus + .form-search-image {
   fill: var(--basic-red);
+  opacity: 1;
 }
 
 .user-tools {
@@ -481,7 +486,7 @@ img {
 }
 
 .user-profile-hero:hover .user-profile-hero-image {
- fill: var(--special-blue);
+  fill: var(--special-blue);
 }
 
 .user-profile-hero:active {
